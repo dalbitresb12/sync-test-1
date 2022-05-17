@@ -1,0 +1,11 @@
+group:
+  repos: |
+    dalbitresb12/sync-test-2
+    dalbitresb12/sync-test-3
+  files:
+    - source: db.json
+      dest: server/db.json
+    - source: routes.json
+      dest: server/routes.json
+    - source: .github/workflows/sync.yml
+      dest: .github/workflows/sync.yml
