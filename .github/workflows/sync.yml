@@ -49,6 +49,6 @@ jobs:
         uses: peter-evans/enable-pull-request-automerge@v2
         with:
           token: ${{ secrets.BOT_PAT }}
-          repository: steps.pr-info.outputs.repository
-          pull-request-number: steps.pr-info.outputs.number
+          repository: ${{ steps.pr-info.outputs.repository }}
+          pull-request-number: ${{ steps.pr-info.outputs.number }}
           merge-method: merge
